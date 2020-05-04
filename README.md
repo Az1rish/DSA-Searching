@@ -14,4 +14,6 @@
         } 
     }
 
-4.  
+4.  a. post order should be 14, 19, 15, 27, 25, 79, 90, 91, 89, 35
+
+    b. post order should be 8, 6, 5, 7, 10, 9, 11
