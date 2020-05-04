@@ -16,11 +16,12 @@ function makeTree() {
     return tree;
 }
 
-console.log(makeTree());
+// console.log(makeTree());
 
 function bfs(tree, values = []) {
     const queue = new Queue();
     const node = tree.root;
+    console.log('root', node);
     queue.enqueue(node);
     console.log(queue);
     while (queue.size) {
@@ -38,4 +39,4 @@ function bfs(tree, values = []) {
     return values;
 }
 
-// console.log(bfs(makeTree()));
+console.log(bfs(makeTree()));
