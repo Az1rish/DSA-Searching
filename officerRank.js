@@ -21,14 +21,10 @@ function makeTree() {
 function bfs(tree, values = []) {
     const queue = new Queue();
     const node = tree;
-    // console.log('root', node);
     queue.enqueue(node);
-    // console.log(queue);
     while (queue.size) {
         const node = queue.dequeue();
-        // console.log('node', node);
         values.push(node.value);
-        // console.log('values', values);
         if (node.left) {
             queue.enqueue(node.left);
         }
